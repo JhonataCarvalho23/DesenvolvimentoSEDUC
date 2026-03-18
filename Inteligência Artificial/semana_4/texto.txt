@@ -1,0 +1,21 @@
+1. Art genius gera imagens originais para jogos; textmaster escreve roteiros para vídeos; musicmaker cria trilhas sonoras.
+2. Não serve, porque cada ia tem uma função diferença, mesmo que todas servem para gerar.
+3. Quanto mais desenvolvido for o promp, melhor vai ser o resultado, do contrário, pode ficar diferente do pedido.
+
+1. Pensando em grupo em um projeto, ter curiosidades sobre a melhor forma de executa-lo é algo relevante para o desenvolvimento.
+2. Em grupo, é melhor persistir quando o ponto de vista de um integrante é bem melhor executado na teoria, enquanto se o grupo tiver duas ou mais grande ideias, é necessário fazer uma reunião para decidir como vai ser elaborado o projeto com ambas as ideias.
+3. BreakThrough significa avanço, grande descoberta, conquista ou ruptura. Com base nisso, as ideias dos integrantes do projeto precisam estar alinhadas de forma clara para poder gerar.
+
+Registro
+
+Gabriel Alves
+
+Jhonata Carvalho
+
+Gustavo Honorato
+
+Opção A: Transformer, porque é mais versátil e multimodal.
+
+Opção B: Conforme na tabela.
+
+Opção C: VAE-GAN por ter baixo custo de hardware e eficiência de treinamento

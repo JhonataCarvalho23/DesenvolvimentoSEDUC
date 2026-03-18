@@ -1,0 +1,26 @@
+Assunto: Pesquisa sobre quais funcionalidades do site são feitas por back-end ou front-end.
+ 
+Olá, equipe,
+
+Espero que todos estejam bem.
+
+Busca de produtos: back-end, porque consulta o banco de dados, mas usa o front-end para colocar uma barra de pesquisa;
+
+
+Carrinho de compra: front-end para a parte visual e back-end para o banco de dados;
+
+
+Histórico de pedidos: back-end porque consulta o banco de dados;
+
+
+Processamento de pagamentos: back-end (pode ser feito em python);
+
+
+Recomendação de produtos com base nas últimas escolhas do usuário: back-end
+porque consulta o banco de dados;
+
+Antes de ser enviado os dados ao servidor, cada dado precisa ser verificado: back-end por se tratar de dados de pagamento
+
+
+Atenciosamente,
+Jhonata Carvalho.

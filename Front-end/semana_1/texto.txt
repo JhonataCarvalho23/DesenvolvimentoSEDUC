@@ -1,0 +1,5 @@
+09/02 Semana 1 - Aula 2
+
+Jhonata Carvalho Silva
+
+No bloco de notas, o código não tem cores nem organização, o que dificulta a leitura. Nos editores de código, tudo fica mais visual e organizado. Além disso, eles possuem autocompletar, que sugere comandos e evita erros de digitação. Outra vantagem é a verificação de erros. O bloco de notas não avisa quando algo está errado, mas o editor de código mostra os erros enquanto o programador escreve. Também é possível organizar melhor os arquivos do projeto em pastas. Por fim, os editores de código se integram com outras ferramentas que facilitam a criação e manutenção dos sites.

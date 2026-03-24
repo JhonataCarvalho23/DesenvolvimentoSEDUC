@@ -1,0 +1,13 @@
+Registro aula 2:
+
+Para o cenário da EduTech, nossa escolha técnica é o GitHub (Plano Team). Esta ferramenta é a mais adequada porque centraliza as necessidades de CI/CD através do GitHub Actions e o processo de code review via Pull Requests em uma interface que o time já está habituado pelo uso do VS Code. Financeiramente, o custo estimado para os 11 integrantes atuais gira em torno de US44 que em torno de R$ 260 (considerando uma cotação de R$ 5,90) mensais, o que preserva quase metade do orçamento de R$ 500 para outras demandas.
+
+Aula 3 - slide 16:
+
+Projeto A
+
+O projeto A tem que ser privado porque contém informações sensíveis dos usuários, como a biometria dos funcionários e a folha de pagamento. Os riscos incluem o custo maior de manutenção, enquanto um vazamento em repositório público causaria danos jurídicos à instituição e exposição de funcionários. Sim é possível alterar ou atualizar os sistemas no futuro, como por exemplo adicionar uma nova biometria ou remover alguma. As medidas de seguranças essenciais são a criptografia de dados e acesso restrito as informações.
+
+Projetos B
+
+O projeto B deve ser público, pois o objetivo é criar portfólio e fornecer uma ferramenta útil para a comunidade. Os riscos envolvem o uso indevido do código ou plágio. Para este caso, a medida de segurança fundamental é a realização de testes automatizados de segurança.

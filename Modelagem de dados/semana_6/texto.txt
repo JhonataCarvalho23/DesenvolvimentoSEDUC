@@ -1,0 +1,9 @@
+SET SESSION TRANSACTION ISOLATION LEVEL SERIALIZABLE: Ele serve para ordenar as requisições.
+
+BEGIN: Ele serve para iniciar formalmente uma transação.
+
+WHERE NOT EXISTS: Filtra resultados de uma consulta principal com base  na não existência de registro em uma subconsulta relacinada.
+
+COMMIT: Salvar permanentemente todas as alterações feitas durante uma transação no banco de dados.
+
+ROLLBACK: Esse comando desfaz todas as alterações feitas durante uma transação que ainda não foram salvas permanentemente. 

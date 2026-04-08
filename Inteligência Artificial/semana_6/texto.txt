@@ -1,0 +1,41 @@
+Atividade da aula 1
+
+1- Antigamente algumas ideias surgiam do nada, pois antes não existia muitas coisas para se basear, como por exemplo o computador. Porém hoje em dia eu acho que nenhuma ideia surge do nada, pois hoje ha muitos elementos para você se basear e criar algo novo.
+
+2- O processo funciona da seguinte forma, a mente ativa memórias das cores e do calor, junto com o domínio da linguagem para construir metáforas. Utilizamos o conhecimento visual de que o sol é uma esfera de fogo e a percepção emocional de que o fim do dia pode simbolizar uma despedida ou um descanso.
+
+3- Diferente de nós, ela não sentiria a beleza do entardecer, mas entenderia quais palavras ou cores costumam aparecer juntas para gerar um resultado que os humanos consideram estético.
+
+Atividade da aula 2
+
+1- A IA Generativa ajuda a transformar ideias em rascunhos de textos ou imagens em segundos.
+
+2- O uso dessa tecnologia traz riscos, como o desrespeito aos direitos autorais de artistas reais e a criação de notícias falsas.
+
+3- Para equilibrar isso, governos e empresas devem criar regras claras de transparência, sempre avisando quando a IA for usada. O segredo é tratar a ferramenta como um assistente, garantindo que a decisão final e o toque criativo sejam sempre de uma pessoa.
+
+Registro 
+
+1-  Diagnóstico Médico (Pneumonia em Raios-X)
+
+Risco Principal: Morte ou agravamento irreversível da saúde do paciente devido a um diagnóstico incorreto (falso negativo), levando à ausência de tratamento.
+
+Como o erro poderia ocorrer: A IA pode ter sido treinada com dados enviesados ou de baixa qualidade. Por exemplo, se ela aprendeu a associar a pneumonia a marcas de equipamentos específicos de um hospital em vez de padrões biológicos, ela pode falhar ao analisar imagens de máquinas diferentes.
+
+Mitigação Principal:  Implementar o "Humano no Controle" (Human-in-the-loop). A IA deve servir apenas como uma ferramenta de triagem ou segunda opinião, sendo obrigatória a revisão final e a assinatura de um médico radiologista antes de qualquer conduta clínica.
+
+2- Projeto de Engenharia (Suporte de Motor 30% mais leve)
+
+Risco Principal: Falha catastrófica do componente (quebra do suporte) com o carro em movimento, podendo causar acidentes graves ou incêndios no motor.
+
+ Como o erro poderia ocorrer: A IA generativa foca na otimização de peso, mas pode ignorar variáveis complexas do "mundo real" que não foram bem alimentadas no sistema, como a fadiga do metal após anos de vibração constante ou variações extremas de temperatura.
+
+Mitigação Principal: Realização de Testes de Estresse e Simulações Físicas Rigorosas (como análise de elementos finitos) e testes em protótipos reais antes da fabricação em massa, garantindo que o design atenda a margens de segurança rigorosas.
+
+3- Segurança (Reconhecimento de Voz em Bancos)
+
+Risco Principal: Invasão de contas e roubo de patrimônio em larga escala (fraude financeira).
+
+Como o erro poderia ocorrer: Através de ataques de "Deepfake" de voz. Criminosos podem usar outras IAs para clonar a voz de um cliente a partir de pequenos trechos de áudio (redes sociais, por exemplo) e enganar o sistema do banco.
+
+Mitigação Principal: Uso de Autenticação Multifator (MFA). O banco não deve confiar apenas na voz; deve exigir um segundo fator de confirmação, como um código enviado via aplicativo (token) ou reconhecimento facial, para autorizar transações críticas.

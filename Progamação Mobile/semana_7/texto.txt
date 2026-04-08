@@ -1,0 +1,58 @@
+1. Identificação de problemas no código original
+Strings "mágicas": O uso de textos fixos como "novo" e "processado" dentro do when facilita erros de digitação e dificulta a manutenção.
+Violação do SRP (Princípio de Responsabilidade Única): A classe PedidoProcessor faz tudo: decide a lógica, imprime mensagens e simula processamento (com o perigoso Thread.sleep).
+Bloqueio de Thread: O uso de Thread.sleep(2000) na thread principal trava o aplicativo (como vimos nas atividades anteriores).
+Dificuldade de Expansão: Se surgir um novo status (ex: "cancelado"), você precisará alterar a classe principal, aumentando o risco de bugs.
+ 
+ 
+2. Código Refatorado (Kotlin)
+Nesta versão, utilizaremos um Enum para os status e o padrão Strategy para que cada status saiba como se processar.
+ 
+kotlin
+// 1. Usando Enum para evitar erros de digitação com Strings
+enum class StatusPedido {
+    NOVO, PROCESSADO, DESCONHECIDO
+}
+
+data class Pedido(val id: Int, val status: StatusPedido)
+
+// 2. Aplicando Strategy: Cada ação é isolada
+interface ProcessamentoStrategy {
+    fun executar(id: Int)
+}
+
+class ProcessarNovo : ProcessamentoStrategy {
+    override fun executar(id: Int) {
+        println("Pedido em processamento: $id")
+        // Em um app real, aqui usaríamos uma Coroutine em vez de Thread.sleep
+    }
+}
+
+class ProcessarJaConcluido : ProcessamentoStrategy {
+    override fun executar(id: Int) = println("Pedido já processado: $id")
+}
+
+// 3. Classe Principal Refatorada (Single Responsibility)
+class PedidoProcessor {
+    private val estrategias = mapOf(
+        StatusPedido.NOVO to ProcessarNovo(),
+        StatusPedido.PROCESSADO to ProcessarJaConcluido()
+    )
+
+    fun processarPedido(pedido: Pedido) {
+        val estrategia = estrategias[pedido.status]
+        
+        if (estrategia != null) {
+            estrategia.executar(pedido.id)
+        } else {
+            println("Status de1sconhecido do pedido: ${pedido.id}")
+        }
+    }
+}
+ 
+ 
+3. Documentação das mudanças e justificativas
+Uso de Enums: Substituir Strings por Enums traz segurança de tipo. O compilador agora nos avisa se tentarmos usar um status que não existe.
+Padrão Strategy: Movemos a lógica de cada "caso" para classes separadas (ProcessarNovo, ProcessarJaConcluido). Isso torna o código modular: se quisermos mudar como um pedido novo é processado, não mexemos no código dos pedidos já processados.
+Eliminação do when gigante: Ao usar um Map de estratégias, eliminamos a necessidade de um bloco when ou if/else que cresceria infinitamente a cada nova funcionalidade.
+Single Responsibility Principle (SRP): Agora, a PedidoProcessor apenas gerencia quem deve fazer o trabalho, enquanto as classes de estratégia realmente fazem o trabalho.

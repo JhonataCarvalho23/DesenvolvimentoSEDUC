@@ -1,0 +1,56 @@
+Essa parte da atividade foca em como o app faz tarefas "pesadas" (como salvar algo no banco de dados) sem travar a tela. É como se a UI Thread fosse o garçom (atendendo o cliente) e a AsyncTask fosse o cozinheiro (trabalhando lá no fundo).
+Aqui está a implementação da Parte 1 para você colocar no seu trabalho:
+ 
+Implementação com AsyncTask (Java)
+Mesmo estando depreciada, o professor quer que você entenda a estrutura dela. Crie uma classe dentro da sua Activity (ou em um arquivo separado):
+ 
+java
+// O primeiro parâmetro (String) é o que a tarefa recebe
+// O segundo (Void) é o progresso (não vamos usar)
+// O terceiro (Boolean) é o resultado que vai para o onPostExecute
+private class SaveNoteTask extends AsyncTask<String, Void, Boolean> {
+
+    // 1. Antes de começar: Mostra um aviso ou carregamento na tela
+    @Override
+    protected void onPreExecute() {
+        super.onPreExecute();
+        // Exemplo: mostrar um Toast ou um ProgressBar
+        Toast.makeText(MainActivity.this, "Salvando nota...", Toast.LENGTH_SHORT).show();
+    }
+
+    // 2. Em segundo plano: Aqui a mágica acontece sem travar o app
+    @Override
+    protected Boolean doInBackground(String... params) {
+        String nota = params[0];
+        try {
+            // Simulando o tempo de salvar no banco de dados (2 segundos)
+            Thread.sleep(2000); 
+            
+            // Aqui entraria o código real do Banco de Dados (ex: SQLite ou Room)
+            System.out.println("Nota salva no banco: " + nota);
+            
+            return true; // Sucesso!
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+            return false; // Falha
+        }
+    }
+
+    // 3. Depois de terminar: Volta para a tela principal para avisar o usuário
+    @Override
+    protected void onPostExecute(Boolean success) {
+        super.onPostExecute(success);
+        if (success) {
+            Toast.makeText(MainActivity.this, "Nota salva com sucesso!", Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(MainActivity.this, "Erro ao salvar nota.", Toast.LENGTH_LONG).show();
+        }
+    }
+}
+
+Como você chamaria essa tarefa no seu botão "Salvar"?
+Dentro do seu setOnClickListener, você usaria:
+ 
+java
+String textoDaNota = editTextNota.getText().toString();
+new SaveNoteTask().execute(textoDaNota);

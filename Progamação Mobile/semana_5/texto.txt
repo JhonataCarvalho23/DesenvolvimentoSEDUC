@@ -1,0 +1,25 @@
+Parte 1 - Buscando todas as tarefas (Leitura)
+Para buscar informações de um servidor sem alterar nada, usamos o método de "pegar".
+Método HTTP: GET (É o método padrão para solicitar dados).
+URL: https://meuapp.com (Um endereço fictício que representa a lista de recursos).
+Cabeçalhos (Headers):
+Accept: application/json (Isso avisa ao servidor: "Ei, eu quero que você me responda no formato JSON").
+Authorization: Bearer [seu_token] (Caso o app precise de senha/login para acessar).
+ 
+ 
+Parte 2 - Enviando uma nova tarefa (Criação)
+Para enviar algo novo para o servidor gravar no banco de dados, usamos o método de "postar".
+Método HTTP: POST (Usado para criar novos registros).
+URL: https://meuapp.com
+Cabeçalhos (Headers):
+Content-Type: application/json (Avisa ao servidor: "Estou te enviando um arquivo do tipo JSON").
+Corpo da Requisição (Body): Aqui vai o "pacote" com os dados da tarefa que você criou.
+Exemplo de tarefa em JSON:
+ 
+json
+{
+  "titulo": "Estudar Programação Mobile",
+  "descricao": "Finalizar a atividade sobre requisições HTTP",
+  "prioridade": "Alta",
+  "concluida": false
+}

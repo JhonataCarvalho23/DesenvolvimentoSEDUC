@@ -1,0 +1,32 @@
+Perguntas de consolidação (Aula 1)
+
+1. Usando a analogia da aula, explique com suas palavras a diferença entre o processo direto e o processo inverso.
+R: O processo direto adiciona gradualmente ruídos em uma imagens em timestep definidos até que a imagem se torne irreconhecível e o processo inverso prever e remove ruído em cada timestep. 
+
+2. Qual é a única tarefa que a IA precisa realizar em cada passo do processo inverso para conseguir reconstruir uma imagem?
+R: A única tarefa que a IA deve realizar é a de prever o ruído que foi adicionado naquele passo e subtraí-lo.
+
+3. Por que o step scheduler é tão importante? O que aconteceria se o "plano" do escultor fosse ruim?
+R: Ele é responsável por definir quanto de ruído o modelo deve tentar remover em cada timestep do processo inverso. Um plano ruim vai resultar em uma imagem de baixa qualidade. 
+
+Perguntas de consolidação (Aula 2)
+
+1. O que é o beta schedule e qual o seu papel no processo de difusão?
+R: É o plano preciso que define a quantidade de ruído a ser adicionada em cada timestep.
+
+2. Qual a principal diferença visual e prática entre um beta schedule linear e um de cosseno?
+R: Linear é uma reta normal, já o cosseno é uma curva suave.
+
+3. Por que a estratégia de agendamento de ruído é importante? Como ela afeta o aprendizado da IA?
+R: Porque o jeito como o ruído é adicionado vai afetar diretamente a habilidade da IA de removê-lo.
+
+Perguntas de consolidação (Aula 3):
+
+1. Qual é a principal função da rede UNet no processo de difusão?
+R: A principal função da rede UNet é receber uma imagem com ruído e o timestep atual, e prever o ruído que está presente naquela imagem.
+
+2. Explique a relação entre a UNet e o denoiser. Um poderia existir sem o outro nesse contexto?
+A UNet é a ferramenta e o denoiser é o processo. Não, pois sem a UNet o denoiser não saberia o que processar.
+
+3. Se você quisesse gerar uma imagem muito criativa e artística, que pode não ser 100% fiel ao seu prompt, você usaria um valor de guidance scale alto ou baixo? Por quê?
+R: Escolheria o valor de guidance scale baixo, pois uma escala menor dá mais liberdade à IA, permitindo que ela explore interpretações artísticas além do prompt inserido pelo usuário, resultando em uma imagem mais variada e inesperada.

@@ -1,0 +1,13 @@
+1.    Por que o Inception-V3 é uma boa "referência"?
+
+R: O Inception-V3 é referência por ser treinado com milhões de imagens reais e reconhecer padrões visuais com precisão de especialista.
+
+
+2.    Diferença entre Inception Score (IS) e FID?
+
+R: O Inception Score mede a nitidez e a diversidade das imagens geradas, enquanto o FID compara a semelhança estatística entre as imagens artificiais e as reais.
+
+
+3.    Como os limiares (IS > 5.0, FID < 50) ajudam?
+
+R: Os limiares servem como metas objetivas para validar se a qualidade das imagens geradas atende aos padrões técnicos exigidos.

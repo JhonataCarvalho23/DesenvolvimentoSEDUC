@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produto Acessível</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+
+<body>
+
+    <main class="produto">
+
+        <img
+            src="assets/foto-fone.jpg"
+            alt="Imagem ilustrativa do fone de ouvido Bluetooth"
+            class="produto-imagem"
+        >
+
+        <h1 class="produto-titulo">
+            Fone de Ouvido Bluetooth
+        </h1>
+
+        <p class="produto-descricao">
+            Fone de ouvido sem fio com boa qualidade de som,
+            conforto e conexão Bluetooth.
+        </p>
+
+        <p class="produto-preco">
+            R$ 99,90
+        </p>
+
+        <div class="acoes">
+
+            <button
+                type="button"
+                id="comprar"
+                class="btn btn-comprar"
+                aria-label="Adicionar fone de ouvido Bluetooth ao carrinho">
+                Comprar
+            </button>
+
+            <button
+                type="button"
+                id="saiba-mais"
+                class="btn btn-secundario"
+                aria-label="Ver mais informações sobre o fone de ouvido Bluetooth">
+                Saiba mais
+            </button>
+
+        </div>
+
+        <p
+            id="mensagem"
+            class="mensagem"
+            aria-live="polite">
+        </p>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

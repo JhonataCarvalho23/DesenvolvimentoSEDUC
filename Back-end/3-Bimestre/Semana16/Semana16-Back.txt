@@ -1,0 +1,114 @@
+
+Atividade de Registro – Semana 16
+
+Jhonata Carvalho Silva – 3B
+
+1 - Explique com suas palavras por que o CORS é importante em uma API.
+
+R: Porque ele impede que sites maliciosas façam requisições não autorizadas à API.
+
+ 
+
+2 - Liste os três cabeçalhos de CORS estudados e diga a função de cada um.
+
+R: access-control-allow-origin: Define quais origens podem acessar a API
+
+access-control-allow-methods: Define quais métodos HTTP (GET, POST, etc.) são permitidos.
+
+access-control-allow-headers: Define quais cabeçalhos personalizados podem ser enviados.
+
+ 
+
+3 - Explique como uma API pode permitir uma aplicação parceira e impedir uma origem não autorizada.
+
+R: Configurando o cabeçalho com o domínio da aplicação parceira, assim, bloqueando automaticamente domínios desconhecidos.
+
+ 
+
+4 - Explique um problema que pode acontecer se o CORS for configurado de forma incorreta.
+
+R: Porque pode permitir que qualquer sites maliciosos tenham acesso a dados que não deveriam.
+
+ 
+
+5 - Explique a ideia do OAuth 2.0 no cenário bancário e cite os fluxos apresentados no material.
+
+R: Permite que aplicativos parceiros acessem dados bancários sem saber a senha do usuário. Fluxos: Authorization Code, Implicit, Password Credentials e Client Credentials.
+
+ 
+
+6 - Explique o que é armazenado no payload de um JWT e qual a função da signature.
+
+R: O payload armazena os dados do usuário e do token, já o signature garante a integridade  do token, provando que ele não foi alterado após ser emitido.
+
+ 
+
+7 - Descreva um fluxo simples para proteger uma operação financeira usando JWT.
+
+R: O usuário faz login → recebe um JWT → envia o JWT no cabeçalho da operação financeira → a API valida a assinatura e libera a transação.
+
+ 
+
+8 - Cite medidas adicionais de segurança indicadas no material, como HTTPS e políticas de CORS.
+
+R: Uso de HTTPS e políticas restritas de CORS.
+
+ 
+
+9 - Qual é a principal função de uma ferramenta de monitoramento?
+
+R: Acompanhar o desempenho, disponibilidade e segurança da aplicação em tempo real.
+
+ 
+
+10 - Qual ferramenta apresentada no material é indicada para análise de logs em tempo real?
+
+R: ELK Stack.
+
+ 
+
+11 - Qual a diferença entre log de acesso e log de erro?
+
+R: O log de acesso registra todas as requisições recebidas, já o de erro registra apenas as falhas do sistema.
+
+ 
+
+12 - Como os logs podem ajudar a identificar tentativas de ataque?
+
+R: Mostrando padrões incomuns.
+
+ 
+
+13 - Em um período de Black Friday, qual seria a primeira informação que você procuraria no monitoramento e por quê?
+
+R: O tráfego de rede e uso de CPU/memória, para garantir que o servidor aguente a alta demanda sem cair.
+
+ 
+
+14 - O que forma uma origem no CORS?
+
+R: Protocolo + Domínio + Porta.
+
+ 
+
+15 - Qual cabeçalho define as origens permitidas?
+
+R: access-control-allow-origin.
+
+ 
+
+16 - Qual é a diferença entre autenticação e autorização?
+
+R: Autenticação serve para descobrir quem você é e autorização é o que você pode acessar.
+
+ 
+
+17 - Quais são as três partes de um JWT?
+
+R: Header, Payload e Signature.
+
+ 
+
+18 - Qual é a diferença entre monitoramento e análise de logs?
+
+R: O monitoramento observa o sistema funcionando em tempo real, já os logs consultam o registro histórico do que já aconteceu.

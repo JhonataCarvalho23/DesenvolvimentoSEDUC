@@ -1,0 +1,81 @@
+Atividade de Registro – Semana 16 – IA
+
+Jhonata Carvalho Silva
+
+ 
+
+Aula 01 – slides 6 e 7
+
+1 - Que tipos de dados você precisaria coletar para tomar essa decisão?
+R: Preço, notas dos críticos, tempo de jogo, requisitos do sistema e vídeos de gameplay de ação.
+
+2 - Por que organizar e limpar esses dados é importante antes de usá-los?
+R: Para remover avaliações falsas ou exageradas da internet e garantir que a escolha seja baseada em fatos reais sobre a ação do jogo.
+
+3 - Como você saberia se a conclusão que tirou está correta ou não?
+R: Testando o jogo na prática; se ele entregar a ação esperada e divertir, a análise estava certa.
+
+ 
+
+Aula 01 – slide 22
+
+1 - Como você costuma agir quando trabalha em dupla e as tarefas são diferentes?
+R: Busco entender o que o colega está fazendo e mantenho uma comunicação aberta para garantir que as nossas partes se encaixem no final.
+
+2 - Por que dividir o trabalho de forma equilibrada é importante para o resultado?
+R: Evita a sobrecarga de um dos lados, diminui erros por cansaço e garante que todas as etapas do projeto avancem com a mesma qualidade.
+
+3 - O que você faz quando percebe que seu colega está com mais dificuldades ou com mais tarefas?
+R: Ofereço ajuda direta nas tarefas dele e sugiro reorganizar a divisão do trabalho para equilibrar o ritmo da dupla.
+
+4 - Que atitudes ajudam a integrar bem o trabalho de duas pessoas em um único resultado?
+R: Fazer reuniões rápidas de alinhamento, revisar o trabalho um do outro e usar ferramentas compartilhadas para juntar os dados e os modelos.
+
+5 - Como a colaboração pode melhorar a visão geral de um projeto do início ao fim?
+R: Permite que os dois entendam todas as fases, desde a coleta de dados até as métricas finais, evitando furos no resultado por falta de comunicação.
+
+Atividade de registro
+
+Código python
+
+ 
+
+from sklearn.model_selection import train_test_split
+
+from sklearn.linear_model import LogisticRegression
+
+from sklearn.metrics import accuracy_score
+
+ 
+
+X = [, [4, 0], [1, 3], [3, 1], [5, 0], [2, 2]
+
+]
+
+y = [0, 1, 0, 1, 1, 0]
+
+ 
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
+
+ 
+
+modelo = LogisticRegression()
+
+modelo.fit(X_train, y_train)
+
+ 
+
+previsoes = modelo.predict(X_test)
+
+acuracia = accuracy_score(y_test, previsoes)
+
+ 
+
+print(f"Acurácia do modelo: {acuracia * 100:.2f}%")
+
+ 
+
+Relatório:
+
+O modelo que eu montei usou Regressão Logística para tentar adivinhar se a galera ia passar ou rodar de ano, olhando só as horas de estudo e as faltas de cada um. No teste deu 100% de acerto, o que parece perfeito, mas a verdade é que isso só aconteceu porque a lista de dados era minúscula, com apenas 6 alunos. Na vida real, esse modelo é bem limitado porque ele não consegue entender situações mais complicadas ou alunos que fogem muito do padrão. Por isso, esse trabalho é só o primeiríssimo passo em Machine Learning. Para fazer um sistema que funcione de verdade em uma escola real, a gente precisaria de uma montanha de dados de verdade, passar horas limpando e organizando tudo, testar vários tipos de algoritmos diferentes e fazer testes muito mais difíceis para ter certeza que o negócio funciona mesmo.

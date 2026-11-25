@@ -1,0 +1,217 @@
+Jhonata Carvalho
+
+Fabio Lazaro
+
+ 
+
+Aula 1 – slide 6 e 7
+
+1 - Se você simplesmente somar todos os números, o que pode acontecer?
+
+R: A altura vai decidir tudo sozinha. Como os centímetros são números muito maiores, eles vão engolir o número de gols e a idade na soma final.
+
+2 – Por que números maiores podem “pesar mais” na decisão?
+
+R: Porque a soma simples não entende o valor real de cada coisa. Uma diferença de 15 centímetros na altura é normal, mas uma diferença de 15 gols é gigante. A soma trata os dois números do mesmo jeito.
+
+3 – Como seria possível ajustar esses valores para que a comparação fique mais justa?
+
+R: Transformando tudo em notas de 0 a 10. Quem for mais alto ganha 10 em altura, e quem fizer mais gols ganha 10 em gols. Depois, basta somar essas notas.
+
+4 – Em que outras situações números em escalas diferentes podem atrapalhar uma análise?
+
+R: Ao comprar um celular, se você tentar somar os 5000 de bateria com as 3 câmeras. Também na escola, se tentar somar a nota da prova (até 10) com o número de faltas do ano.
+
+ 
+
+Aula 1 – slide 22 e 23
+
+1 - O que esse novo valor representa?
+
+R: A dedicação do aluno.
+
+2 - Ele combina duas informações?
+
+R: Não, ele apenas multiplica duas informações.
+
+3 - É diferente de usar apenas horas_estudo sozinho?
+
+R: Sim, porque se o aluno estudar bastante mas não ter uma frequência boa ele não está se dedicando do jeito certo.
+
+ 
+
+Aula 2 – slide 14 e 15
+
+1 - O valor de correlação está próximo de 1?
+
+R: Sim, a correlação está próxima de 1, indicando uma relação linear positiva forte entre as variáveis.
+
+2 – O que isso indica?
+
+R: Isso indica que quando uma variável aumenta, a outra tende a aumentar também.
+
+3 –  Essas duas variáveis carregam informação parecida?
+
+R: Sim, as duas variáveis carregam informações parecidas, pois apresentam um comportamento muito semelhante.
+
+ 
+
+Registro
+
+Código em python:
+
+ 
+
+import numpy as np
+
+import pandas as pd
+
+from sklearn.decomposition import PCA
+
+from sklearn.preprocessing import StandardScaler
+
+ 
+
+# Configuração da semente para reprodutibilidade
+
+np.random.seed(42)
+
+ 
+
+# Criação do DataFrame com os dados simulados originais
+
+dados = pd.DataFrame(
+
+    {
+
+        "horas_estudo": np.random.randint(1, 6, 50),
+
+        "exercicios": np.random.randint(10, 100, 50),
+
+        "frequencia": np.random.randint(60, 100, 50),
+
+        "participacao": np.random.randint(1, 10, 50),
+
+    }
+
+)
+
+dados["nota_anterior"] = dados["horas_estudo"] * 1.5 + np.random.normal(
+
+    0, 1, 50
+
+)
+
+ 
+
+# --- ETAPA 1: Análise de Correlação Inicial ---
+
+print("--- ETAPA 1: Matriz de Correlação Inicial ---")
+
+matriz_corr = dados.corr()
+
+print(matriz_corr.round(4))
+
+print("\nPar de alta correlação identificado:")
+
+print(
+
+    f"horas_estudo e nota_anterior: {matriz_corr.loc['horas_estudo', 'nota_anterior']:.4f}\n"
+
+)
+
+ 
+
+# --- ETAPA 3: Criação de Nova Feature ---
+
+# Combina indicadores de presença e engajamento em sala de aula
+
+dados["engajamento_total"] = dados["frequencia"] + dados["participacao"]
+
+ 
+
+# --- ETAPA 4: Aplicação de PCA ---
+
+# O PCA exige que os dados estejam na mesma escala (média 0, variância 1)
+
+scaler = StandardScaler()
+
+dados_padronizados = scaler.fit_transform(dados)
+
+ 
+
+# Aplicação do PCA para todos os componentes possíveis
+
+pca = PCA()
+
+dados_pca = pca.fit_transform(dados_padronizados)
+
+ 
+
+# Resultados da variância explicada
+
+variancia_individual = pca.explained_variance_ratio_
+
+variancia_acumulada = np.cumsum(variancia_individual)
+
+ 
+
+print("--- ETAPA 4: Resultados do PCA ---")
+
+for i, var in enumerate(variancia_individual):
+
+    print(
+
+        f"Componente Principal {i+1}: Variância Explicada = {var*100:.2f}% | Acumulada = {variancia_acumulada[i]*100:.2f}%"
+
+    )
+
+ 
+
+Relatório:
+
+A análise inicial indicou uma colinearidade crítica de 0.9081 entre horas_estudo e nota_anterior. Manter variáveis tão correlacionadas gera redundância e prejudica a estabilidade do modelo, o que justificou focar em horas_estudo (métrica de ação direta) e consolidar o comportamento na nova feature engajamento_total. Após a padronização, a aplicação do PCA eliminou essa colinearidade ao transformar os dados originais em eixos ortogonais e totalmente independentes. Os resultados demonstram que os dois primeiros componentes retêm 67,76% da informação, enquanto os quatro primeiros acumulam 98,49% da variância total. Essa transformação reduz drasticamente o ruído e a dimensionalidade do sistema, mitigando o risco de overfitting e otimizando a capacidade de generalização do algoritmo.
+
+ 
+
+Respostas:
+
+1 - Como a seleção de features ajuda na generalização?
+
+R: Ela reduz o ruído matemático e simplifica o modelo. Algoritmos mais simples evitam o overfitting (decoreba dos dados de treino), permitindo acertar previsões em novos cenários reais.
+
+ 
+
+2 – Por que colinearidade pode prejudicar modelos?
+
+R: Porque ela gera instabilidade nos coeficientes de modelos lineares e infla a variância. O modelo não consegue separar o efeito real de cada variável redundante na previsão.
+
+ 
+
+3 – Quando usar PCA?
+
+R: Quando há um número excessivo de variáveis, forte multicolinearidade generalizada ou restrições severas de custo computacional de hardware para o processamento.
+
+ 
+
+4 – O modelo apresentou melhora após a seleção ou a transformação das variáveis? Por quê?
+
+R: Sim. Embora os dados sejam puramente simulados, a eliminação da dependência linear direta estabiliza matematicamente qualquer algoritmo matemático de classificação ou regressão.
+
+ 
+
+5 – Quais variáveis pareciam trazer informações redundantes?
+
+R: O par formado por horas_estudo e nota_anterior apresentou redundância quase perfeita (r = 0.91\). Adicionalmente, engajamento_total absorveu a variação direta de frequencia e participacao.
+
+ 
+
+6 – A redução de dimensionalidade alterou a interpretação dos dados?
+
+R: Sim. Os dados originais perderam seus nomes e significados físicos (ex: horas, notas). Eles passaram a ser interpretados puramente como combinações matemáticas lineares abstratas (Componentes).
+
+ 
+
+7 - Houve impacto no desempenho do modelo após aplicar PCA ou remover variáveis correlacionadas?
+
+R: Sim. O espaço de atributos passou a ter eixos 100% ortogonais (independentes). O algoritmo treina mais rápido, consome menos memória física e mitiga os riscos de erros numéricos causados por variáveis espelhadas.

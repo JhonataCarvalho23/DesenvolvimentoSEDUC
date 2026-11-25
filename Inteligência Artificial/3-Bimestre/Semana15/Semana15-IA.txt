@@ -1,0 +1,131 @@
+Registro semana 15 IA
+
+Jhonata Carvalho
+
+ 
+
+Análise de viabilidade técnica: triagem automatizada.
+
+ 
+
+Contexto profissional:
+
+Vocês atuam na equipe de P&D da HealthTech Solutions. A empresa deseja implementar um chatbot de triagem inicial para pacientes. O objetivo do bot é ler a queixa do paciente e classificá-lo em uma das três categorias de urgência:
+
+1. Baixa: sintomas leves.
+
+2. Média: atenção necessária.
+
+3. Alta: emergência.
+
+ 
+
+O CTO (Chief Technology Officer) está em dúvida se deve investir em um desenvolvimento tradicional (Python com regras if/else) ou integrar uma API de IA Generativa (LLM). Sua missão é desenvolver um protótipo de prova de conceito (PoC) utilizando ambas as abordagens e apresentar um relatório técnico comparando a eficácia delas.
+
+ 
+
+Código adaptado:
+
+ 
+
+# Função de triagem simbólica
+
+def triagem_simbolica(queixa):
+
+    queixa = queixa.lower()
+
+ 
+
+    # Casos de ALTA urgência
+
+    if "sangue" in queixa or "desmaio" in queixa or "respirar" in queixa:
+
+        return "ALTA: Vá ao hospital imediatamente."
+
+ 
+
+    # Casos de MÉDIA urgência
+
+    elif "febre" in queixa or "dor forte" in queixa:
+
+        return "MÉDIA: Agende uma consulta para hoje."
+
+ 
+
+    # Casos de BAIXA urgência
+
+    elif "dor" in queixa or "incômodo" in queixa:
+
+        return "BAIXA: Observe os sintomas."
+
+ 
+
+    # Caso não reconhecido
+
+    else:
+
+        return "ERRO: Não compreendi a queixa. Seja mais específico."
+
+ 
+
+# ==========================
+
+# CHATBOT DE TRIAGEM
+
+# ==========================
+
+print("=== CHATBOT DE TRIAGEM MÉDICA ===")
+
+queixa_usuario = input("Descreva sua queixa: ")
+
+resultado = triagem_simbolica(queixa_usuario)
+
+print("\nResultado da triagem:")
+
+print(resultado)
+
+ 
+
+Parte final - Respostas:
+
+ 
+
+Resultado 1 (Teste de Falha em Python):
+
+=== CHATBOT DE TRIAGEM MÉDICA ===
+
+Descreva sua queixa: Não consigo puxar o ar e minha visão escureceu.
+
+Resultado da triagem:
+
+ERRO: Não compreendi a queixa. Seja mais específico.
+
+ 
+
+Resultado 2 (Teste de Sucesso na IA):
+
+ALTA: A queixa descreve dificuldade importante para respirar ("não consigo puxar o ar") associada a escurecimento da visão, o que pode indicar uma emergência médica. É necessária avaliação imediata em um serviço de urgência.
+
+ 
+
+Resultado 3 (Teste de Robustez em Python):
+
+=== CHATBOT DE TRIAGEM MÉDICA ===
+
+Descreva sua queixa: Não estou com febre, na verdade estou gelado e tremendo muito, sentindo uma pontada fina no braço esquerdo.
+
+Resultado da triagem:
+
+MÉDIA: Agende uma consulta para hoje.
+
+ 
+
+Resultado 4 (Teste de Robustez na IA):
+
+ALTA: Embora a pessoa negue febre, a combinação de tremores intensos, sensação de frio e dor (pontada) no braço esquerdo pode indicar uma condição grave que exige avaliação médica urgente. A classificação é baseada no contexto clínico, e não apenas em palavras-chave.
+
+ 
+
+Conclusão e Relatório Técnico para o CTO:
+
+A Inteligência Artificial demonstrou muita facilidade para responder aos testes após a configuração do prompt. Em contrapartida, o código em Python apresentou grandes limitações no primeiro cenário, embora tenha classificado o segundo de forma literal. Conclui-se que a IA é a solução mais prática e eficiente para o desenvolvimento de chatbots de respostas automáticas, enquanto o algoritmo em Python exigiria uma manutenção complexa e adaptações profundas para se tornar viável.

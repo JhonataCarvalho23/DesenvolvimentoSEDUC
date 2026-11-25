@@ -1,0 +1,233 @@
+Atividade de Registro – Semana 18 IA
+
+Jhonata Carvalho
+
+Gustavo Honorato
+
+ 
+
+Aula 01 – slide 6
+
+ 
+
+1 - Ele realmente consegue fazer tudo isso sozinho? Ou ele apenas gera uma resposta… e para por aí?
+
+R: Não, o ChatGPT tradicional não consegue fazer tudo isso sozinho. Ele apenas gera o texto da resposta e para por aí.
+
+ 
+
+2 - O que esse sistema precisaria ter para realmente executar essa tarefa sozinho?
+
+R: Para executar essa tarefa, o sistema precisaria deixar de ser um modelo de linguagem básico e se tornar um Agente de IA, equipado com ferramentas para pesquisar na web e acessar servidores de e-mail, além de um laço de execução para planejar e validar as ações.
+
+ 
+
+Aula 01 – slide 12
+
+Mapeando um agente real
+
+ 
+
+Vocês estão desenvolvendo um agente de IA para auxiliar uma
+
+equipe de tecnologia no dia a dia.
+
+A primeira missão desse agente é: Agendar uma reunião com o
+
+time de desenvolvimento para amanhã às 15h e enviar uma
+
+pauta com os três bugs mais críticos do repositório.
+
+Mas o agente não pode agir imediatamente. Antes disso, ele
+
+precisa entender o contexto, buscar informações e decidir como
+
+executar a tarefa.
+
+ 
+
+Em duplas:
+
+• Identifiquem pelo menos três informações que o agente
+
+precisaria obter antes de agir.
+
+• Expliquem quais decisões o agente precisaria tomar antes
+
+de executar a ação.
+
+ 
+
+Para agir, o agente precisa primeiro buscar dados em fontes externas. Ele deve acessar a API do calendário corporativo para verificar a disponibilidade do time amanhã às 15h. Depois, precisa se conectar à API do gerenciador de projetos (como Jira ou GitHub) para filtrar e identificar os bugs marcados com a maior prioridade. Por fim, deve consultar o sistema interno para obter a lista de e-mails atualizada de todos os membros do time de desenvolvimento.
+
+Com os dados em mãos, o agente deve tomar decisões logísticas antes da execução. Se houver conflito no horário de algum desenvolvedor, ele precisa decidir se mantém o agendamento, se sugere um novo horário ou se pede ajuda ao usuário. Caso encontre mais de três bugs críticos, deve decidir o critério de desempate, escolhendo se prioriza por data de criação ou por impacto no sistema. Ele também define a formatação da pauta, decidindo se envia apenas os títulos das falhas ou se inclui os links diretos de cada uma.
+
+ 
+
+Aula 02 – slide 6
+
+O bilionário Arthur Vance foi encontrado morto no escritório de sua mansão isolada durante uma forte tempestade, com um tiro no peito e a chave do cofre sumida.
+
+O Cenário
+
+A mansão estava totalmente trancada por dentro e apenas quatro pessoas estavam no local: a esposa, o sócio, o mordomo e a governanta. Não havia sinais de arrombamento nas portas ou janelas, indicando que a vítima conhecia e abriu a porta para o agressor, ou que o assassino possuía uma chave mestra. O disparo ocorreu exatamente às 23h00, horário em que faltou luz na região devido à queda de um raio na rede elétrica principal.
+
+As Pistas
+
+Uma taça de conhaque com vestígios de amêndoas (veneno que não chegou a fazer efeito total antes do tiro) foi deixada na escrivaninha.
+O relógio de bolso de Arthur estava parado às 23h00, mas o vidro estava intacto, sugerindo que foi adiantado ou atrasado manualmente para simular a hora da morte.
+Um pedaço de tecido rasgado de veludo azul ficou preso no trinco da janela do corredor dos fundos, que estava destrancada.
+O cofre da biblioteca estava vazio, mas os documentos da herança continuavam lá; apenas um pendrive com chantagens contra políticos sumiu.
+Os Suspeitos
+
+Helena Vance (Esposa): Descobriu que Arthur planejava deserdá-la na manhã seguinte para doar toda a fortuna a uma fundação. Ela foi vista no corredor superior às 22h45, mas alega estar em seu quarto tomando remédios para insônia.
+Marcelo Costa (Sócio): Estava prestes a ser processado por desvio de verbas da empresa de tecnologia de Arthur. Ele estava no térreo mexendo no celular, mas o sinal da operadora falhou exatamente às 22h55, impossibilitando confirmar sua localização exata pelo GPS.
+James (O Mordomo): Trabalhava há 20 anos com a família e guardava a chave mestra da mansão em seu bolso. Ele foi o primeiro a chegar ao corpo, mas suas botas estavam limpas de lama, o que é estranho para quem cruzou o jardim debaixo de chuva para atender aos gritos.
+ 
+
+Resposta:
+
+O assassino de Arthur Vance é o sócio, Marcelo Costa, agindo em cumplicidade com a governanta (a quarta pessoa mencionada, que preparou o veneno e facilitou o acesso).
+
+A Resolução do Crime
+
+A farsa do horário: O relógio parado às 23h00 foi alterado manualmente para criar um álibi falso durante o apagão. O crime aconteceu antes.
+O álibi derrubado: Marcelo afirma que estava no celular até o sinal cair às 22h55. No entanto, o raio só caiu às 23h00. O sinal dele sumiu às 22h55 porque ele entrou no cofre/bunker blindado da biblioteca, onde o sinal de celular naturalmente não funciona, para roubar o pendrive de chantagens.
+O veneno: A taça com cheiro de amêndoas indica envenenamento por cianeto. Quem serve bebidas e tem acesso livre à cozinha e ao escritório é a governanta. O veneno começou a fazer efeito antes das 23h00, forçando Marcelo a atirar para garantir a morte e simular o latrocínio no horário do apagão.
+A pista falsa da janela: O tecido de veludo azul na janela destrancada e as botas limpas do mordomo eliminam o mordomo. O assassino tentou simular que alguém veio de fora (pelo jardim) e fugiu pela janela. Se o mordomo estivesse mentindo sobre ter vindo do jardim, suas botas estariam sujas. Como estavam limpas, ele realmente estava dentro de casa. A janela foi aberta por dentro para criar uma falsa pista de invasão.
+O motivo: Marcelo roubou o pendrive de chantagens contra políticos para usar como moeda de troca ou vender, além de eliminar o processo de desvio de verbas que destruiria sua carreira.
+ 
+
+ 
+
+Aula 02 – slide 11 e 12
+
+ 
+
+blobid0.png
+
+ 
+
+ 
+
+ 
+
+blobid1.png
+
+ 
+
+blobid2.png
+
+ 
+
+Registro Semana 18
+
+Cliente 1 — Moderador de conteúdo
+
+ 
+
+1. Qual arquitetura é mais adequada? Justifique.
+
+ 
+
+R: Reativa, porque precisa analisar os comentários muito rápido e em grande quantidade. Ela funciona com regras simples, tipo: se tiver palavrão ou ameaça → remove.
+
+ 
+
+Cliente 2 — Assistente de diagnóstico médico
+
+ 
+
+1. Qual arquitetura é mais adequada? Justifique.
+
+ 
+
+R: Deliberativa, porque precisa analisar várias informações, pensar em diferentes possibilidades e dar justificativas. Nesse caso, a precisão é mais importante que a velocidade.
+
+ 
+
+Cliente 3 — Robô de armazém
+
+ 
+
+1. Qual arquitetura é mais adequada? Explique por que uma única abordagem não é suficiente.
+
+ 
+
+R: Híbrida, porque o robô precisa reagir rapidamente aos obstáculos, mas também precisa planejar as melhores rotas. Uma arquitetura só não conseguiria fazer as duas coisas tão bem.
+
+ 
+
+Etapa 2 — Fluxo completo
+
+ 
+
+Escolhi o Cliente 3, porque é um exemplo fácil de representar:
+
+ 
+
+Entrada:
+
+R: O robô percebe os obstáculos e os paletes que precisa transportar.
+
+ 
+
+Processamento:
+
+R: Ele usa regras para desviar dos obstáculos e planejamento para escolher as melhores rotas.
+
+ 
+
+Ação:
+
+R: O robô se movimenta pelo armazém e transporta os paletes.
+
+ 
+
+Observação:
+
+R: Ele verifica se apareceu algum obstáculo ou se a rota está bloqueada.
+
+ 
+
+Ajuste:
+
+R: Se alguma coisa bloquear o caminho, ele muda a rota e continua a tarefa.
+
+ 
+
+Fluxo simples:
+
+Início → Perceber obstáculos/paletes → Planejar rota → Movimentar → Verificar caminho → Caminho livre? → Sim → Continuar → Fim
+
+ 
+
+Não → Recalcular rota → Movimentar novamente
+
+ 
+
+Etapa 3 - Reflexão
+
+ 
+
+1. Por que não existe uma única arquitetura ideal para todos os problemas?
+
+ 
+
+R: Porque cada problema tem uma necessidade diferente. Alguns precisam de muita velocidade, outros precisam de planejamento e outros precisam dos dois.
+
+ 
+
+2. Complete as frases:
+
+ 
+
+a) Um agente reativo é mais adequado quando precisa responder rapidamente a situações simples.
+
+ 
+
+b) Um agente deliberativo é mais adequado quando precisa analisar informações e planejar antes de agir.
+
+ 
+
+c) Uma arquitetura híbrida é necessária quando o agente precisa reagir rapidamente e também fazer planejamentos mais complexos.

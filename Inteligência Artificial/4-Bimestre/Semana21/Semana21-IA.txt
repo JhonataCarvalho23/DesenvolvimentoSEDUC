@@ -1,0 +1,11 @@
+Jhonata Carvalho
+
+A CloudSoft S.A. pode modernizar o SupportFlow substituindo a lógica manual de palavras-chave por um framework de orquestração como o LangChain, estruturado em múltiplos agentes especialistas coordenados por um orquestrador central.
+ 
+Na estrutura anterior, a falta de histórico, a dificuldade de manutenção, a incapacidade de combinar ações e a ausência de registros eram problemas crônicos. Eles são resolvidos pelos componentes de Memória, Ferramentas, Executor e Rastreamento (Callbacks), respectivamente. Nenhum desses recursos exige, por si só, a criação de vários agentes, mas a divisão do sistema traz muito mais organização. O modelo antigo falhava ao receber termos como "fatura" em vez de "nota fiscal" porque buscava apenas palavras exatas e ignorava o sentido da frase, gerando erros desnecessários.
+ 
+A nova arquitetura divide o atendimento em três perfis focados. O Agente de Autenticação gerencia a segurança com a ferramenta de envio de link de recuperação. O Agente Financeiro cuida do faturamento usando as ferramentas de extração de CPF e busca de notas fiscais. O Agente de Sucesso do Cliente trata de assinaturas operando as funções de cancelamento e listagem de planos. O Agente Orquestrador centraliza o fluxo, analisando a mensagem do usuário para decidir qual especialista deve agir.
+ 
+O fluxo de decisão ocorre quando o Orquestrador recebe a mensagem, consulta a memória da conversa e avalia semanticamente a intenção do cliente. Ele direciona o atendimento ao agente correto, que executa a tarefa com suas ferramentas e devolve o resultado para a resposta final.
+ 
+Esse modelo resolve o problema de termos sinônimos porque a inteligência artificial compreende o significado do texto e não apenas letras isoladas. O sistema entende que pedir uma fatura tem o mesmo objetivo de buscar uma nota fiscal, garantindo o roteamento correto para o Agente Financeiro sem depender de termos exatos.

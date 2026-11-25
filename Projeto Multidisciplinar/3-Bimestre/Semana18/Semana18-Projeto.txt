@@ -1,0 +1,91 @@
+Atividade de Registro – Semana 18 de projeto
+
+Jhonata Carvalho
+
+Gustavo Honorato
+
+Aula 01 – slide 7 e 8
+
+1. O que você se lembra sobre os ODS?
+
+R: São 17 metas da ONU para erradicar a pobreza, proteger o meio ambiente e garantir paz e prosperidade global até 2030. 
+
+ 
+
+2. Por que é importante conectar projetos aos ODS?
+
+R: Porque ajuda a criar soluções práticas que geram impacto social positivo, melhoram a qualidade de vida e promovem a sustentabilidade.
+
+ 
+
+3. O seu projeto de empreendedorismo, desenvolvido em CCM, seguiu algum ODS? Qual? Como foi implementado?
+
+R: Seguiu o ODS 12 (Consumo e Produção Responsáveis) focado em reduzir o desperdício de alimentos na cantina, por meio de oficinas de reaproveitamento e conscientização.
+
+ 
+
+4. Você conhece algum outro projeto ou iniciativa que seguiu algum ODS?
+
+R: Sim, projetos comunitários de hortas urbanas (ODS 2), empresas que usam energia solar (ODS 7) e mutirões de limpeza em praias (ODS 14).
+
+ 
+
+Aula 01 – slide 14
+
+Escolha um ou mais ODS relevantes
+
+para o projeto do grupo;
+
+2. Escreva ideias relacionadas ao ODS
+
+escolhido em notas autoadesivas;
+
+3. Troque as ideias entre os membros do
+
+grupo;
+
+4. Reúna, categorize e selecione as
+
+melhores ideias para o projeto;
+
+5. Apresente as ideias escolhidas,
+
+destacando o impacto no ODS.
+
+ 
+
+Para o projeto de redução do desperdício de alimentos na cantina, selecionamos o ODS 12 (Consumo e Produção Responsáveis) e o ODS 13 (Ação Contra a Mudança Global do Clima), gerando ideias iniciais como a pesagem diária das sobras, a oferta de porções menores com direito a repetição e a compostagem de resíduos orgânicos. Após organizarmos essas sugestões em campanhas educativas e melhorias operacionais, escolhemos o monitoramento visível do desperdício e a criação da composteira escolar como as ações definitivas do grupo. O impacto final dessas propostas será a transformação dos hábitos de consumo dos alunos e a eliminação imediata de resíduos descartados no lixo comum, diminuindo a emissão de gases poluentes e promovendo a sustentabilidade prática dentro da escola.
+
+ 
+
+Registro
+
+Parte 1:
+
+1 - Como podemos tornar nosso projeto mais eficiente em termos de uso de recursos?
+
+R: Focando em uma infraestrutura em nuvem que utilize energia cem por cento renovável e otimize os algoritmos para consumir menos processamento. No lado humano e financeiro, aplique a metodologia lean estritamente na funcionalidade central do produto, eliminando o desperdício de tempo e dinheiro com ferramentas secundárias nesta fase de teste.
+
+ 
+
+2 - Como podemos reduzir o impacto ambiental das nossas ações?
+
+R: Adotando uma operação digital totalmente livre de papel através de contratos e relatórios eletrônicos. Caso o seu projeto envolver produtos físicos, utilize embalagens compostáveis e crie canais de logística reversa, além de planejar um design modular que facilite reparos e evite o descarte precoce de componentes.
+
+ 
+
+3 - O que podemos melhorar no nosso MVP para atender aos ODS de forma mais concreta?
+
+R: Para alinhar o MVP aos ODS de forma concreta, exiba no painel do usuário um contador com o impacto ecológico positivo gerado, atendendo ao ODS 12. Use códigos abertos e APIs integradas para cumprir o ODS 9, e insira microcompensações automáticas de carbono em cada transação financeira para responder diretamente ao ODS 13.
+
+ 
+
+Parte 2:
+
+Com os seus MVPs ajustados, compartilhem as mudanças feitas com sua turma. Durante esse momento, ouvimos o feedback dos colegas e exploramos sugestões para aprimorar ainda mais o Produto Mínimo Viável. Esse é um ótimo momento para aprender com as ideias dos outros e garantir que os projetos fiquem ainda mais alinhados.
+
+ 
+
+Pessoal, após refletirmos sobre o impacto do nosso MVP, decidimos ajustar o projeto para torná-lo mais sustentável e alinhado aos ODS da ONU. Para reduzir o impacto ambiental e o uso de recursos, otimizamos nossa estrutura focando em uma operação digital livre de papel e na escolha de servidores em nuvem que utilizam energia renovável. No caso de componentes físicos, passamos a prever o uso de embalagens compostáveis e logística reversa. Além disso, para atender ao ODS 12 de forma concreta, incluiremos um painel que mostra ao usuário o impacto ecológico positivo que ele gera ao usar nossa solução. Estamos abertos a feedbacks e queremos saber: que outras soluções simples vocês sugerem para melhorar ainda mais a nossa sustentabilidade nesta fase inicial?
+
+ 

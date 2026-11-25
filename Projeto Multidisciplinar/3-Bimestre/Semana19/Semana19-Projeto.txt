@@ -1,0 +1,72 @@
+Registro semana 18 - Projeto Multidisciplinar - 3b 
+Nome: Jhonata Carvalho 
+
+Registro aula 1 
+Problema do projeto encontrado:  Estamos com problema na integração com o banco de dados. 
+
+
+Causa: 
+A causa do problema foi a maior dedicação para a parte visual do site, por isso não 
+criamos o banco de dados ainda.
+
+Como podemos adaptar essas ideias ao nosso contexto? 
+R: Podemos organizar nosso grupo para cada um fazer sua parte para resolver o problema.
+
+Como podemos medir a eficácia das nossas soluções inovadoras? 
+R: Com base em estudo e planejamento.
+
+Por que alguns membros não estão engajados? 
+R: O grupo foi dividido e separado em áreas de atuação, mas nos últimos detalhes do 
+projeto, ficamos um pouco perdidos porque alguns integrantes já terminaram seus deveres, 
+enquanto outros não.
+
+A solução proposta ajudará a minimizar esse problema? 
+Sim. Com base na solução apresentada, podemos criar o banco de dados com o MongoDB e 
+integrá-lo ao sistema com participação organizada do grupo, como divisão para criação da 
+rede, conexão e teste. 
+
+
+Solução: Integrá-lo ao mongodb porque não funciona apenas localmente.
+
+ Registro aula 2 -Reflitam e discutam: como as soluções que vocês propuseram podem ser implementadas de forma prática? Verifiquem se há alguma área na qual ajustes precisam ser feitos antes de se aplicar as 
+mudanças. 
+
+Podem ser implementadas sem problemas se planejarmos e estudarmos a melhor 
+maneira de executar isso. Pode ser que haja algo que precisamos alterar no sistema para 
+ficar tudo ok.
+
+Com base no que vocês planejaram na aula anterior, agora é o momento de aplicar as 
+soluções criativas no seu MVP. Pensem em como essas mudanças podem transformar o 
+processo.
+
+Essa mudança vai possibilitar a gente finalizar o projeto e partir finalmente para a última 
+etapa, que é a compra do domínio.
+
+Pergunta-chave: Como podemos transformar este processo de forma inovadora? 
+Podemos fazer da forma simples, que terá o mesmo resultado.
+
+Registro aula 3 - Como podemos monitorar os resultados da solução implementada? 
+Podemos acompanhar o andamento da integração com o banco de dados, verificando se os 
+dados estão sendo armazenados e recuperados corretamente pelo sistema.
+
+Quais sinais indicariam que a solução está funcionando? 
+Se o sistema conseguir enviar, armazenar e buscar os dados no MongoDB sem apresentar 
+erros, saberemos que a integração está funcionando.
+
+Como podemos coletar feedback dos membros da equipe? 
+Podemos conversar com os integrantes responsáveis por cada parte e verificar se estão 
+conseguindo realizar suas tarefas e se encontraram alguma dificuldade.
+
+Que ajustes podem ser necessários? 
+Caso apareçam erros na conexão ou na comunicação entre o sistema e o banco de dados, 
+podemos revisar o código, as configurações de conexão e a estrutura dos dados.
+
+Qual foi o resultado do monitoramento? 
+O monitoramento mostrou que precisamos testar cada parte da integração antes de 
+considerar o banco de dados concluído. Também percebemos que a organização das 
+tarefas é importante para evitar que alguns integrantes fiquem sem atividades. 
+Solução aplicada: 
+Estamos trabalhando na integração do MongoDB ao sistema e realizando testes para 
+verificar se os dados estão sendo enviados e recebidos corretamente. Com isso, 
+conseguimos avançar na finalização do projeto e nos aproximar da última etapa, que será a 
+compra do domínio.
